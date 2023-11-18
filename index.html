@@ -1,0 +1,844 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Spering Free Website</title>
+    <style>
+      /*============================= SECTION - 1  CSS ==============================*/
+      body {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+      }
+      .section-1 {
+        height: 85vh;
+      }
+      .left {
+        background-color: #1a2e35;
+        height: 100%;
+        width: 55%;
+        float: left;
+      }
+      .right {
+        background-color: #1cbbb4;
+        width: 45%;
+        height: 100%;
+        float: right;
+      }
+      .content {
+        width: 60%;
+        height: 50%;
+        margin: 20% auto;
+      }
+      .content p {
+        color: white;
+      }
+      .header img {
+        margin-top: 30px;
+        margin-left: 15px;
+        width: 50px;
+        height: 50px;
+        float: left;
+        cursor: pointer;
+      }
+      .header p {
+        font-weight: bolder;
+        font-size: 30px;
+        color: white;
+        float: left;
+        margin: 28px 0px 0px 10px;
+        cursor: pointer;
+      }
+      .content p:nth-child(1) {
+        font-size: 40px;
+        font-weight: bolder;
+        margin: 0;
+      }
+      .content p:nth-child(2) {
+        font-size: 16px;
+      }
+      button {
+        height: 40px;
+        width: 200px;
+        margin-top: 50px;
+        border: none;
+        font-size: 18px;
+        cursor: pointer;
+      }
+      .content button:nth-child(1) {
+        margin-right: 5px;
+        background-color: #ff4f5a;
+        color: white;
+      }
+      .content button:nth-child(1):hover {
+        background-color: #1a2e35;
+        color: #ff4f5a;
+        border: 1px solid #ff4f5a;
+      }
+      .content button:nth-child(2):hover {
+        background-color: #1a2e35;
+        color: white;
+        border: 1px solid white;
+      }
+      .right img {
+        height: 80%;
+        margin: 50px 60px;
+      }
+
+      /*============================= SECTION - 2  CSS ==============================*/
+
+      .next-btn {
+        margin: -32px 5px 0px 3px;
+        float: left;
+        height: 60px;
+        width: 60px;
+        border-radius: 50%;
+        background-color: #1cbbb4;
+        cursor: pointer;
+      }
+      .prev-btn {
+        margin: -32px 5px 0px 120px;
+        float: left;
+        height: 60px;
+        width: 60px;
+        border-radius: 50%;
+        background-color: #1cbbb4;
+        cursor: pointer;
+      }
+      .prev-btn img {
+        height: 20px;
+        padding: 18px;
+      }
+      .next-btn img {
+        height: 20px;
+        padding: 18px;
+      }
+      .prev-btn:hover {
+        background-color: #ff4f5a;
+      }
+      .next-btn:hover {
+        background-color: #ff4f5a;
+      }
+
+      .section-2 {
+        height: 100vh;
+        box-sizing: border-box;
+      }
+      .section-2-left {
+        margin: 0px -180px;
+        width: 44%;
+        height: 80%;
+        float: left;
+      }
+
+      .section-2-right {
+        width: 55%;
+        height: 80%;
+        float: right;
+      }
+
+      .section-2-content p:nth-child(1) {
+        font-size: 35px;
+        margin-top: 15%;
+        margin-left: 5%;
+        font-weight: bolder;
+        box-sizing: border-box;
+      }
+
+      .section-2-content p:nth-child(2) {
+        font-size: 18px;
+        margin-left: 5%;
+        width: 80%;
+      }
+
+      .section-2-content button:nth-child(1) {
+        background-color: #ff4f5a;
+        color: white;
+        margin-left: 5%;
+      }
+
+      .section-2-content button:nth-child(2) {
+        background-color: #1a2e35;
+        color: white;
+        margin-left: 10px;
+      }
+
+      .section-2-content button:nth-child(1):hover {
+        background-color: white;
+        color: #ff4f5a;
+        border: 1px solid #ff4f5a;
+      }
+
+      .section-2-content button:nth-child(2):hover {
+        background-color: white;
+        color: #1a2e35;
+        border: 1px solid #1a2e35;
+      }
+
+      .section-2-left img {
+        height: 75%;
+        margin-top: 15%;
+        margin-left: 5%;
+      }
+
+      /*============================= SECTION - 3  CSS ==============================*/
+
+      .section-3 {
+        height: 90vh;
+        background-color: #1cbbb4;
+        width: 100%;
+        box-sizing: border-box;
+      }
+
+      .area {
+        height: 80%;
+        width: 100%;
+      }
+
+      .section-3 .heading {
+        box-sizing: border-box;
+        width: 100%;
+        height: 10%;
+        color: white;
+        font-weight: bold;
+        text-decoration: underline;
+        font-size: 30px;
+        padding-left: 42%;
+        padding-top: 80px;
+      }
+
+      .section-image {
+        height: 50%;
+        width: 355px;
+        float: left;
+        padding-left: 5%;
+      }
+      .section-image img {
+        height: 35%;
+        width: 25%;
+        padding-top: 20%;
+        padding-left: 30%;
+      }
+      .under-image {
+        color: white;
+        font-weight: 500;
+        width: 60%;
+        font-size: 20px;
+        margin-left: 25%;
+      }
+
+      /*============================= SECTION - 4  CSS ==============================*/
+
+      .section-4 {
+        height: 120vh;
+      }
+
+      .upper {
+        height: 60%;
+      }
+      .upper img {
+        height: 100%;
+        width: 50%;
+        padding-top: 20px;
+        padding-left: 24%;
+      }
+      .lower {
+        height: 40%;
+      }
+      .lower p:nth-child(1) {
+        box-sizing: border-box;
+        font-size: 35px;
+        width: 45%;
+        font-weight: bolder;
+        margin: 30px auto;
+      }
+
+      .lower p:nth-child(2) {
+        width: 80%;
+        font-size: 18px;
+        margin: 20px auto;
+      }
+      .lower button {
+        height: 40px;
+        width: 200px;
+        margin: 25px 39%;
+        background-color: #ff4f5a;
+        font-size: 18px;
+        color: white;
+      }
+      .lower button:hover {
+        background-color: white;
+        color: #ff4f5a;
+        border: 1px solid #ff4f5a;
+      }
+
+      /*============================= SECTION - 5  CSS ==============================*/
+      .section-5 {
+        height: 120vh;
+        margin-bottom: 12vh;
+      }
+      .up {
+        height: 20%;
+        width: 80%;
+        margin: 10% auto 5px;
+        font-size: 35px;
+        font-weight: bolder;
+      }
+      .section-5-left {
+        width: 40%;
+        height: 100%;
+        float: left;
+        margin-left: 10%;
+        cursor: pointer;
+      }
+      .section-5-right {
+        width: 49%;
+        height: 100%;
+        float: right;
+      }
+      .section-5-right img {
+        height: 70%;
+        width: 90%;
+        margin: 10px auto;
+      }
+      .items {
+        width: 80%;
+        height: 20%;
+      }
+      .items img:hover {
+        background-color: #1cbbb4;
+      }
+
+      /* .items:hover ~ .items img{
+        background-color: #1cbbb4;
+      } */
+      .items img {
+        width: 90px;
+        height: 90px;
+        background-color: #1a2e35;
+        border-radius: 50%;
+        margin-right: 20px;
+        float: left;
+      }
+      .items .item-content p:nth-child(1) {
+        font-size: 20px;
+        font-weight: bold;
+        padding-left: 20px;
+        color: red;
+      }
+
+      .items .item-content p:nth-child(2) {
+        font-size: 26px;
+        font-weight: bold;
+        padding-left: 20px;
+        margin-top: -20px;
+        color: #252525;
+      }
+
+      /*============================= SECTION - 6  CSS ==============================*/
+
+      .section-6 {
+        height: 85vh;
+        /* border: 2px solid red; */
+        box-sizing: border-box;
+      }
+      .section-6-heading {
+        font-size: 30px;
+        width: 30%;
+        padding-left: 10%;
+        font-weight: bold;
+        margin: -15px auto;
+      }
+
+      .center-box {
+        border: 1px solid rgb(168, 159, 159);
+        border-radius: 5px;
+        width: 50%;
+        height: 50%;
+        margin: 10vh auto;
+      }
+
+      .box-head {
+        font-size: 22px;
+        font-weight: 600;
+        width: 27%;
+        margin: 30px auto 20px;
+      }
+      .box-body {
+        width: 80%;
+        margin: 0px auto;
+        font-weight: lighter;
+        text-align: center;
+        padding: 0px 20px 20px;
+      }
+      .center-box img {
+        margin-left: 46%;
+      }
+      .leftButton {
+        float: left;
+        border-radius: 50%;
+        height: 70px;
+        width: 70px;
+        background-color: #1a2e35;
+        margin-top: 25vh;
+        margin-left: 22vw;
+      }
+      .right-button {
+        float: right;
+        border-radius: 50%;
+        height: 70px;
+        width: 70px;
+        background-color: #1a2e35;
+        margin-top: 25vh;
+        margin-right: 22vw;
+      }
+      .leftButton img {
+        padding: 20px 25px 20px;
+        cursor: pointer;
+      }
+      .right-button img {
+        padding: 20px 28px 20px;
+        cursor: pointer;
+      }
+
+      /*============================= SECTION - 7  CSS ==============================*/
+
+      .section-7 {
+        height: 115vh;
+        background-color: #1a2e35;
+        box-sizing: border-box;
+      }
+      .section-7-header .left-header {
+        /* border:  1px solid white; */
+        margin-top: 20vh;
+        margin-left: 8vw;
+        width: 55%;
+        float: left;
+      }
+      .section-7-header {
+        /* border: 1px solid red; */
+        height: 35%;
+      }
+      .section-7-header .left-header img {
+        height: 80px;
+        float: left;
+      }
+
+      .section-7-header .left-header p {
+        float: left;
+        font-size: 33px;
+        margin: 5px -6px;
+        font-weight: bolder;
+        color: white;
+      }
+      .section-7-header .right-header img {
+        height: 30px;
+        margin: 0px 10px;
+        cursor: pointer;
+        /* border: 1px solid white; */
+      }
+      .section-7-header .right-header {
+        /* border: 1px solid white; */
+        width: 30%;
+        margin-top: 24vh;
+        float: right;
+      }
+
+      .section-7 .section-7-inner {
+        height: 40%;
+        width: 85%;
+        margin: 0px auto;
+        /* border: 1px solid green; */
+        color: white;
+        padding-top: 50px;
+      }
+      .Item-1 {
+        width: 20%;
+        /* border: 1px solid white; */
+        float: left;
+      }
+      .Item-2 {
+        width: 30%;
+        /* border: 1px solid white; */
+        float: left;
+      }
+      .Item-3 {
+        width: 25%;
+        /* border: 1px solid white; */
+        float: left;
+      }
+      .Item-4 {
+        width: 24%;
+        /* border: 1px solid white; */
+        float: left;
+      }
+      .Item-1 p {
+        margin: 8px 0px;
+        cursor: pointer;
+      }
+      .Item-1-content {
+        margin-top: 30px;
+      }
+      .Item-2-content {
+        margin-top: 30px;
+        width: 60%;
+      }
+      .Item-3-content {
+        margin-top: 30px;
+        width: 40%;
+      }
+      .Item-4-content {
+        margin-top: 30px;
+      }
+      .Item-4-content input {
+        height: 35px;
+        width: 77%;
+        font-size: 17px;
+        padding-left: 10px;
+      }
+      .Item-4-content button {
+        width: 150px;
+        height: 36px;
+        margin-top: 15px;
+        font-size: 13px;
+        color: #ffffff;
+        border: 1px solid #ffffff;
+        background-color: #ff4f5a;
+        cursor: pointer;
+      }
+      .Item-4-content button:hover {
+        background-color: #1a2e35;
+        color: #ff4f5a;
+        border: 1px solid #ff4f5a;
+      }
+
+      .section-7-footer {
+        /* border: 1px solid white; */
+        height: 10vh;
+      }
+
+      .section-7-footer-content {
+        width: 60%;
+        height: 50px;
+        /* border: 1px solid white; */
+        margin: 0px auto;
+        color: white;
+        font-weight: 600;
+        font-size: 18px;
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
+          Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue",
+          sans-serif;
+      }
+      .location-detail {
+        width: 25%;
+        float: left;
+        height: 40px;
+        /* border: 1px solid green; */
+      }
+      .mail-detail {
+        width: 35%;
+        float: left;
+        height: 40px;
+        /* border: 1px solid green; */
+      }
+      .call-detail {
+        width: 38%;
+        float: left;
+        height: 40px;
+        /* border: 1px solid green; */
+      }
+      .location-detail img {
+        cursor: pointer;
+        height: 30px;
+        float: left;
+        padding-top: 15px;
+      }
+      .location-detail p {
+        cursor: pointer;
+        margin-left: 25px;
+        float: left;
+        width: 36%;
+        /* border: 1px solid red; */
+      }
+
+      .mail-detail img {
+        cursor: pointer;
+        width: 30px;
+        float: left;
+        padding-top: 18px;
+      }
+
+      .mail-detail p {
+        cursor: pointer;
+        margin-left: 25px;
+        float: left;
+        width: 58%;
+        /* border: 1px solid red; */
+      }
+
+      .call-detail img {
+        cursor: pointer;
+        height: 30px;
+        float: left;
+        padding-top: 15px;
+      }
+      .call-detail p {
+        cursor: pointer;
+        margin-left: 25px;
+        float: left;
+        width: 60%;
+        /* border: 1px solid red; */
+      }
+
+      /*============================= FOOTER  CSS ==============================*/
+      .footer {
+        height: 30vh;
+      }
+      .footer p {
+        margin-top: 30px;
+        text-align: center;
+      }
+
+      /* =========================================================================== */
+    </style>
+  </head>
+  <body>
+    <section class="section-1">
+      <div class="left">
+        <div class="header">
+          <img src="images/logo.png" alt="" />
+          <p>Spering</p>
+        </div>
+        <div class="content">
+          <p>
+            YOU CAN <br />
+            HIRE FREELANCER <br />
+            HERE
+          </p>
+          <p>
+            It is a long established fact that a reader will be
+            <br />distracted by the readable content of a page.
+          </p>
+          <div>
+            <button>About Us</button>
+            <button>Get A Quote</button>
+          </div>
+        </div>
+      </div>
+      <div class="right">
+        <img src="images/slider-img.png" alt="" />
+      </div>
+    </section>
+    <section class="section-2">
+      <div class="prev-btn">
+        <img src="images/prev.png" alt="" />
+      </div>
+      <div class="next-btn">
+        <img src="images/next.png" alt="" />
+      </div>
+      <div class="section-2-left">
+        <img src="images/experience-img.jpg" alt="Spering" />
+      </div>
+      <div class="section-2-right">
+        <div class="section-2-content">
+          <p>BEST EXPERINCED FREELANCER HERE</p>
+          <p>
+            It is a long established fact that a reader will be distracted by
+            the readable content of a page when looking at its layout. The point
+            of using Lorem Ipsum is that it has a more-or-less normal
+            distribution of letters, as
+          </p>
+          <div>
+            <button>Read More</button>
+            <button>Hire</button>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="section-3">
+      <p class="heading">CATEGORY</p>
+      <div class="area">
+        <div class="section-image">
+          <img src="images/c1.png" alt="" />
+          <p class="under-image">Design & Arts</p>
+        </div>
+
+        <div class="section-image">
+          <img src="images/c2.png" alt="" />
+          <p class="under-image">Web Development</p>
+        </div>
+
+        <div class="section-image">
+          <img src="images/c3.png" alt="" />
+          <p class="under-image">SEO Marketing</p>
+        </div>
+
+        <div class="section-image">
+          <img src="images/c4.png" alt="" />
+          <p class="under-image">Video Editing</p>
+        </div>
+
+        <div class="section-image">
+          <img src="images/c5.png" alt="" />
+          <p class="under-image">Logo Designing</p>
+        </div>
+
+        <div class="section-image">
+          <img src="images/c6.png" alt="" />
+          <p class="under-image">Game Designing</p>
+        </div>
+      </div>
+    </section>
+    <section class="section-4">
+      <div class="upper">
+        <img src="images/about-img.jpg" alt="Spering" />
+      </div>
+      <div class="lower">
+        <p>ABOUT SPERING COMPANY</p>
+        <p>
+          There are many variations of passages of Lorem Ipsum available, but
+          the majority have suffered alteration in some form, by injected
+          humour, or randomised words which don't look even slightly believable.
+          If youThere are many variations of passages of Lorem Ipsum available,
+          but the majority have suffered alteration in some form, by injected
+          humour, or randomised words which don't look even slightly believable.
+          If you
+        </p>
+        <div>
+          <button>Read More</button>
+        </div>
+      </div>
+    </section>
+    <section class="section-5">
+      <div class="up">
+        WORK FREELANER HAS <br />
+        DONE
+      </div>
+      <div class="section-5-left">
+        <div class="items">
+          <img src="images/f1.png" alt="Spering" />
+          <div class="item-content">
+            <p>$250 Million</p>
+            <p>Paid to Freelancers</p>
+          </div>
+        </div>
+        <div class="items">
+          <img src="images/f2.png" alt="Spering" />
+          <div class="item-content">
+            <p>2 Million</p>
+            <p>Paid Invoices</p>
+          </div>
+        </div>
+        <div class="items">
+          <img src="images/f3.png" alt="Spering" />
+          <div class="item-content">
+            <p>700,000</p>
+            <p>Worldwide <br />Freelancer</p>
+          </div>
+        </div>
+        <div class="items">
+          <img src="images/f4.png" alt="Spering" />
+          <div class="item-content">
+            <p>98%</p>
+            <p>Customer <br />Satisfaction Rate</p>
+          </div>
+        </div>
+      </div>
+      <div class="section-5-right">
+        <img src="images/freelance-img.jpg" alt="" />
+      </div>
+    </section>
+    <section class="section-6">
+      <div class="section-6-heading">TESTIMONIAL</div>
+      <div class="leftButton">
+        <img src="images/prev-angle.png" alt="" />
+      </div>
+      <div class="right-button">
+        <img src="images/next-angle.png" alt="" />
+      </div>
+      <div class="center-box">
+        <div class="box-head">John Hissona</div>
+        <div class="box-body">
+          passages of Lorem Ipsum available, but the majority have suffered
+          alteration in some form, by injected humour, or randomised words which
+          don't look even slightly believable. If youThere are many variations
+          of passages of Lorem Ipsum available, but the majority have suffered
+          alteration in s
+        </div>
+        <img src="images/quote.png" alt="Spering" />
+      </div>
+    </section>
+    <section class="section-7">
+      <div class="section-7-header">
+        <div class="left-header">
+          <img src="images/logo.png" alt="" />
+          <p>Spering</p>
+        </div>
+        <div class="right-header">
+          <img src="images/fb.png" alt="" />
+          <img src="images/twitter.png" alt="" />
+          <img src="images/linkedin.png" alt="" />
+          <img src="images/instagram.png" alt="" />
+          <img src="images/youtube.png" alt="" />
+        </div>
+      </div>
+      <div class="section-7-inner">
+        <div class="Item-1">
+          <h3>USEFUL LINK</h3>
+          <div class="Item-1-content">
+            <p>Home</p>
+            <p>About</p>
+            <p>Work</p>
+            <p>Category</p>
+          </div>
+        </div>
+        <div class="Item-2">
+          <h3>OFFICES</h3>
+          <div class="Item-2-content">
+            <p>
+              Readable content of a page when looking at its layoutreadable
+              content of a page when looking at its layout
+            </p>
+          </div>
+        </div>
+        <div class="Item-3">
+          <h3>INFORMATION</h3>
+          <div class="Item-3-content">
+            <p>
+              Readable content of a page when looking at its layoutreadable
+              content of a page when looking at its layout
+            </p>
+          </div>
+        </div>
+        <div class="Item-4">
+          <h3>NEWSLETTER</h3>
+          <div class="Item-4-content">
+            <input type="email" name="email" placeholder="Email" />
+            <button>SUBSCRIBE</button>
+          </div>
+        </div>
+      </div>
+      <div class="section-7-footer">
+        <div class="section-7-footer-content">
+          <div class="location-detail">
+            <img src="images/location.png" alt="Spering" />
+            <p>Location</p>
+          </div>
+          <div class="mail-detail">
+            <img src="images/mail.png" alt="Spering" />
+            <p>mail@domain.com</p>
+          </div>
+          <div class="call-detail">
+            <img src="images/call.png" alt="Spering" />
+            <p>Call +91 1234567890</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <footer class="footer">
+      <p>&#169; 2023 All Rights Reserved.</p>
+    </footer>
+  </body>
+</html>
